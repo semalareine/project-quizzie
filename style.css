@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: rgba(47, 76, 121) ;
-    height: 8vh;
+    height: 9vh;
     text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -30,7 +30,8 @@ header > img {
 
     
     height: auto;
-    margin: 10px;
+    margin: 15px;
+    margin-left: 15px;
     
 
 }
