@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+}
+
+
+
+@font-face {
+    font-family: 'true'; 
+    src: url('Horizon.otf');
+    
+}
+
+
+body {
+    background-color:rgba(54, 97, 132) ;
+}
+
+header {
+    background-color: rgba(47, 76, 121) ;
+    height: 8vh;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+    
+}
+
+header > img {
+
+    
+    height: auto;
+    margin: 10px;
+    
+
+}
+
+#domainasl {
+
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#questionbox {
+
+    
+    background-color: rgba(217, 217, 217);
+    border: 8px solid #ffffff;
+    border-radius: 40px;
+    padding: 25px;
+    height: 12.5vh;
+    width: 50% ;
+
+    position: absolute;
+    z-index: 1;
+    top: 33%;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+    font-family: 'true';
+    color: white;
+    
+
+}
