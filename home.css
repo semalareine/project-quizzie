@@ -1,3 +1,86 @@
 body {
     background-color:rgba(54, 97, 132) ;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --hd-color: rgba(47, 76, 121) ;
+    --main-color: rgba(54, 97, 132) ;
+    --ft-color: rgba(47, 76, 121) ;
+}
+
+
+
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    'hd'
+    'mn' 
+    'ft'
+}
+
+
+.header{
+    grid-area: hd;
+    height: 15vh;
+    background-color: var(--hd-color);
+    display: flex;
+ 
+}
+
+.main{
+    grid-area: mn;
+    height: 70vh;
+    
+
+}
+
+.footer{
+    grid-area: ft;
+    height: 15vh;
+    background-color: var(--ft-color);
+
+}
+
+
+#logo{
+    width: 140px;
+    height: 140px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+#nav{
+    height: 15vh;
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+}
+
+#name{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 7vh;
+}
+
+#tekst{
+    width: 80vw;
+    background-color: var(--hd-color);
+    height: 20vh;
+    margin-left: 10vw ;
+    display: flex;
+    justify-content: center;
 }
