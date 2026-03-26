@@ -10,6 +10,11 @@ body {
     --ft-color: rgba(47, 76, 121) ;
 }
 
+@font-face {
+    font-family: 'facts';
+    src: url(quizzie/Horizon.otf);
+}
+
 
 
 
@@ -28,12 +33,14 @@ body {
     height: 15vh;
     background-color: var(--hd-color);
     display: flex;
+    font-family: 'facts';
  
 }
 
 .main{
     grid-area: mn;
     height: 70vh;
+    font-family: 'facts';
     
 
 }
@@ -54,7 +61,7 @@ body {
 a{
     text-decoration: none;
     color: aliceblue;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #nav{
