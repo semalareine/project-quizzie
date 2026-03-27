@@ -11,8 +11,8 @@ body {
 }
 
 @font-face {
-    font-family: 'facts';
-    src: url(quizzie/Horizon.otf);
+    font-family: 'true';
+    src: url(media/Horizon.otf);
 }
 
 
@@ -28,34 +28,36 @@ body {
 }
 
 
-.header{
-    grid-area: hd;
-    height: 15vh;
-    background-color: var(--hd-color);
-    display: flex;
-    font-family: 'facts';
- 
-}
+
 
 .main{
     grid-area: mn;
-    height: 75vh;
-    font-family: 'facts';
+    height: 70vh;
+    font-family: 'true';
     
 
 }
 
 .footer{
     grid-area: ft;
-    height: 10vh;
+    height: 15vh;
     background-color: var(--ft-color);
 
 }
 
 
-#logo{
-    width: 140px;
-    height: 140px;
+.header {
+    height: 15vh;
+    background-color: var(--hd-color);
+    display: flex;
+    font-family: 'true';
+    align-items: center;
+    padding-left: 20px;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
 }
 
 a{
@@ -84,43 +86,77 @@ a{
 }
 
 #tekst{
-    width: 70vw;
+    width: 80vw;
     background-color: var(--hd-color);
-    height: 18vh;
-    margin-left: 15vw ;
+    height: 20vh;
+    margin-left: 10vw ;
     display: flex;
     justify-content: center;
-    margin-bottom: 5vh;
 }
 
-.selected{
-    border: 5px solid white;
-    padding: 10px;
-    border-radius: 15%;
+
+#menu-btn {
+    display: none;
+    font-size: 30px;
+    color: aliceblue;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-#selecteer{
-    width: 30vw;
-    height: 23vh;
-    background-color: var(--hd-color);
-    margin-left: 35vw;
 
-}
+@media (max-width: 768px) {
+    .header {
+        justify-content: flex-start;
+        padding: 0 20px;
+        position: relative; 
+        z-index: 1000; 
+    }
 
-h2{
-    font-size: 20px;
-    margin-left: 3vw;
-    padding-top: 40px;
-    font-family: 'facts';
-}
+    #menu-btn {
+        order: 0; 
+        display: block;
+        font-size: 30px;
+        color: aliceblue;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
 
-.btn{
-    font-size: 25px;
-    margin-left: 8.5vw;
-    margin-top: 7vh;
-    font-family: 'facts';
-}
+    #nav {
+        position: fixed;
+        top: 0;
+        left: -100%; 
+        width: 60%;
+        height: 100%;
+        background-color: var(--hd-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 60px;
+        transition: left 0.3s ease;
+        z-index: 999; 
+    }
 
-@media screen and (max-width: 768px){
+    #nav a {
+        margin: 20px 0;
+        font-size: 24px;
+    }
 
+    #nav.active {
+        left: 0; 
+    }
+
+    #name h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #tekst {
+        width: 90vw;
+        margin-left: 5vw;
+        height: auto;
+        padding: 20px;
+    }
 }
