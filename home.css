@@ -88,9 +88,11 @@ a{
     background-color: var(--hd-color);
     height: 18vh;
     margin-left: 15vw ;
-    display: flex;
-    justify-content: center;
     margin-bottom: 5vh;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .selected{
