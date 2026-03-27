@@ -111,7 +111,7 @@ a {
     transform: scale(1.05);
 }
 
-/* Hamburger menu button - hidden on desktop */
+
 #menu-btn {
     display: none;
     font-size: 30px;
