@@ -6,6 +6,10 @@
 body{
     font-family: 'true';
     background-color: rgb(64, 98, 123);
+    background-color:rgba(54, 97, 132) ;
+    margin: 0;
+    padding: 0;
+    
 }
 
 #logo {
