@@ -1,53 +1,53 @@
 const questions = [
     {
-        question: "Welke van de volgende is een gedragsverslaving?",
-        answers: ["Alcohol", "Gamen", "Nicotine", "Medicatie"],
+        question: "Wat is een lichamelijk effect van verslaving?",
+        answers: ["Geluk", "Slechte conditie", "Vriendschap", "Hobby’s"],
         correct: 1
     },
     {
-        question: "Welke stof veroorzaakt vaak een lichamelijke verslaving?",
-        answers: ["Sociale media", "Gokken", "Heroïne", "Shoppen"],
-        correct: 2
-    },
-    {
-        question: "Wat is een voorbeeld van een legale verslaving?",
-        answers: ["Cocaïne", "Alcohol", "XTC", "Heroïne"],
+        question: "Wat is een psychisch effect?",
+        answers: ["Spierpijn", "Depressie", "Hoofdpijn", "Vermoeidheid"],
         correct: 1
     },
     {
-        question: "Welke verslaving heeft geen middel (stof)?",
-        answers: ["Drugsverslaving", "Gameverslaving", "Alcoholverslaving", "Nicotineverslaving"],
+        question: "Verslaving kan leiden tot:",
+        answers: ["Betere concentratie", "Schulden", "Meer energie", "Gezondheid"],
         correct: 1
     },
     {
-        question: "Wat hoort bij een gedragsverslaving?",
-        answers: ["Roken", "Alcohol drinken", "Gokken", "Medicijngebruik"],
+        question: "Wat gebeurt er vaak met relaties bij verslaving?",
+        answers: ["Ze verbeteren", "Ze blijven gelijk", "Ze verslechteren", "Ze verdwijnen niet"],
         correct: 2
     },
     {
-        question: "Welke verslaving komt vaak voor bij jongeren?",
-        answers: ["Heroïne", "Gamen", "Alcoholisme op late leeftijd", "Medicijnverslaving"],
+        question: "Wat is een sociaal effect?",
+        answers: ["Hoesten", "Isolatie", "Misselijkheid", "Zweten"],
         correct: 1
     },
     {
-        question: "Wat is een voorbeeld van een sociale verslaving?",
-        answers: ["Gamen", "Drugs", "Sociale media", "Alcohol"],
+        question: "Wat gebeurt er met schoolprestaties?",
+        answers: ["Verbeteren", "Blijven gelijk", "Verslechteren", "Worden perfect"],
         correct: 2
     },
     {
-        question: "Welke verslaving kan zowel lichamelijk als geestelijk zijn?",
-        answers: ["Shoppen", "Gokken", "Alcohol", "TikTok"],
-        correct: 2
+        question: "Wat kan langdurig drugsgebruik veroorzaken?",
+        answers: ["Gezondheid", "Hersenschade", "Energie", "Focus"],
+        correct: 1
     },
     {
-        question: "Wat is kenmerkend voor een verslaving?",
-        answers: ["Je doet het soms", "Je hebt controle", "Je kunt niet stoppen", "Je doet het alleen in het weekend"],
-        correct: 2
+        question: "Wat is een financieel effect?",
+        answers: ["Sparen", "Schulden", "Rijk worden", "Investeren"],
+        correct: 1
     },
     {
-        question: "Welke hoort NIET bij verslaving?",
-        answers: ["Controleverlies", "Afhankelijkheid", "Gezond gedrag", "Drang"],
-        correct: 2
+        question: "Wat kan verslaving doen met emoties?",
+        answers: ["Stabiliseren", "Versterken van negatieve gevoelens", "Verdwijnen", "Altijd blij maken"],
+        correct: 1
+    },
+    {
+        question: "Wat gebeurt er vaak met werk?",
+        answers: ["Promotie", "Ontslag", "Bonus", "Meer vrije tijd"],
+        correct: 1
     }
 ];
 

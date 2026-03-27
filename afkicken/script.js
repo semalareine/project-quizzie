@@ -1,78 +1,80 @@
 const questions = [
     {
-        question: "Welke van de volgende is een gedragsverslaving?",
-        answers: ["Alcohol", "Gamen", "Nicotine", "Medicatie"],
+        question: "Wat betekent afkicken?",
+        answers: ["Beginnen met gebruiken", "Stoppen met een verslaving", "Minder slapen", "Meer werken"],
         correct: 1
     },
     {
-        question: "Welke stof veroorzaakt vaak een lichamelijke verslaving?",
-        answers: ["Sociale media", "Gokken", "Heroïne", "Shoppen"],
-        correct: 2
-    },
-    {
-        question: "Wat is een voorbeeld van een legale verslaving?",
-        answers: ["Cocaïne", "Alcohol", "XTC", "Heroïne"],
+        question: "Wat zijn ontwenningsverschijnselen?",
+        answers: ["Beloningen", "Klachten bij stoppen", "Gezonde effecten", "Hobby’s"],
         correct: 1
     },
     {
-        question: "Welke verslaving heeft geen middel (stof)?",
-        answers: ["Drugsverslaving", "Gameverslaving", "Alcoholverslaving", "Nicotineverslaving"],
+        question: "Wat helpt bij afkicken?",
+        answers: ["Alleen blijven", "Hulp zoeken", "Meer gebruiken", "Niets doen"],
         correct: 1
     },
     {
-        question: "Wat hoort bij een gedragsverslaving?",
-        answers: ["Roken", "Alcohol drinken", "Gokken", "Medicijngebruik"],
-        correct: 2
-    },
-    {
-        question: "Welke verslaving komt vaak voor bij jongeren?",
-        answers: ["Heroïne", "Gamen", "Alcoholisme op late leeftijd", "Medicijnverslaving"],
+        question: "Wie kan helpen bij afkicken?",
+        answers: ["Niemand", "Vrienden en hulpverleners", "Alleen jezelf", "Internet alleen"],
         correct: 1
     },
     {
-        question: "Wat is een voorbeeld van een sociale verslaving?",
-        answers: ["Gamen", "Drugs", "Sociale media", "Alcohol"],
+        question: "Wat is een voorbeeld van professionele hulp?",
+        answers: ["Gamen", "Therapie", "Winkelen", "Slapen"],
+        correct: 1
+    },
+    {
+        question: "Waarom is afkicken moeilijk?",
+        answers: ["Het is leuk", "Geen motivatie", "Lichamelijke en mentale drang", "Te makkelijk"],
         correct: 2
     },
     {
-        question: "Welke verslaving kan zowel lichamelijk als geestelijk zijn?",
-        answers: ["Shoppen", "Gokken", "Alcohol", "TikTok"],
-        correct: 2
+        question: "Wat helpt terugval voorkomen?",
+        answers: ["Oude gewoontes", "Triggers vermijden", "Meer stress", "Alleen zijn"],
+        correct: 1
     },
     {
-        question: "Wat is kenmerkend voor een verslaving?",
-        answers: ["Je doet het soms", "Je hebt controle", "Je kunt niet stoppen", "Je doet het alleen in het weekend"],
-        correct: 2
+        question: "Wat is een trigger?",
+        answers: ["Iets dat je helpt stoppen", "Iets dat je laat terugvallen", "Een beloning", "Een doel"],
+        correct: 1
     },
     {
-        question: "Welke hoort NIET bij verslaving?",
-        answers: ["Controleverlies", "Afhankelijkheid", "Gezond gedrag", "Drang"],
+        question: "Wat is belangrijk tijdens herstel?",
+        answers: ["Geheim houden", "Ondersteuning", "Meer risico nemen", "Isolatie"],
+        correct: 1
+    },
+    {
+        question: "Hoe lang duurt afkicken?",
+        answers: ["1 dag", "Altijd hetzelfde", "Verschilt per persoon", "Nooit lang"],
         correct: 2
     }
 ];
 
+
 const menuBtn = document.getElementById('menu-btn');
 const nav = document.getElementById('nav');
 
-
+// Toggle menu on burger click
 menuBtn.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
-
+// Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!nav.contains(e.target) && !menuBtn.contains(e.target)) {
         nav.classList.remove('active');
     }
 });
 
-
+// Optional: close menu when clicking a link
 const navLinks = nav.querySelectorAll('a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove('active');
     });
 });
+
 
 let currentQuestion = 0;
 let score = 0;
