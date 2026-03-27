@@ -16,8 +16,6 @@ body {
 }
 
 
-
-
 .grid{
     display: grid;
     height: 100vh;
@@ -26,8 +24,6 @@ body {
     'mn' 
     'ft'
 }
-
-
 
 
 .main{
@@ -103,7 +99,6 @@ a{
     border: none;
     cursor: pointer;
 }
-
 
 @media (max-width: 768px) {
     .header {
