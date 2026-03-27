@@ -366,4 +366,9 @@ body, html {
         font-size: 18px;
         text-align: center;
     }
+
+    .answer {
+
+        bottom: 50px;
+    }
 }

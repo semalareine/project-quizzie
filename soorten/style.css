@@ -360,10 +360,16 @@ body, html {
     .card {
         font-size: 12px;
         height: 100px;
+        
     }
 
     #name h1 {
         font-size: 18px;
         text-align: center;
+    }
+
+    .answer {
+
+        bottom: 50px;
     }
 }
