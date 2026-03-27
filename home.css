@@ -95,6 +95,7 @@ a{
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    color: white;
 }
 
 
@@ -175,6 +176,7 @@ a{
         height: auto;
         padding: 20px;
         font-size: 10px;
+    
     }
 
     #dooom{
@@ -187,5 +189,13 @@ a{
         width: 60vw;
         height: 40vh;
         margin-left: 20vw;
+    }
+
+    .main{
+        height: 75vh;
+    }
+
+    .footer{
+        height: 10vh;
     }
 }
