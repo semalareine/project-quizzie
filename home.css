@@ -12,7 +12,7 @@ body {
 
 @font-face {
     font-family: 'true';
-    src: url(quizzie/Horizon.otf);
+    src: url(media/Horizon.otf);
 }
 
 
@@ -91,40 +91,72 @@ a{
     height: 20vh;
     margin-left: 10vw ;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 5vh;
 }
 
-.selected{
-    border: 5px solid white;
-    padding: 10px;
-    border-radius: 15%;
+
+#menu-btn {
+    display: none;
+    font-size: 30px;
+    color: aliceblue;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-#selecteer{
-    width: 30vw;
-    height: 23vh;
-    background-color: var(--hd-color);
-    margin-left: 35vw;
 
+@media (max-width: 768px) {
+    .header {
+        justify-content: flex-start;
+        padding: 0 20px;
+        position: relative; 
+        z-index: 1000; 
+    }
+
+    #menu-btn {
+        order: 0; 
+        display: block;
+        font-size: 30px;
+        color: aliceblue;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    #nav {
+        position: fixed;
+        top: 0;
+        left: -100%; 
+        width: 60%;
+        height: 100%;
+        background-color: var(--hd-color);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 60px;
+        transition: left 0.3s ease;
+        z-index: 999; 
+    }
+
+    #nav a {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    #nav.active {
+        left: 0; 
+    }
+
+    #name h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #tekst {
+        width: 90vw;
+        margin-left: 5vw;
+        height: auto;
+        padding: 20px;
+    }
 }
-
-h2{
-    font-size: 20px;
-    margin-left: 3vw;
-    padding-top: 40px;
-    font-family: 'facts';
-}
-
-.btn{
-    font-size: 25px;
-    margin-left: 8.5vw;
-    margin-top: 7vh;
-    font-family: 'facts';
-}
-
-@media screen and (max-width: 768px){
-
-}
-
